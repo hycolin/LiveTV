@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A88D4075E238830C1322FF /* Pods_LiveTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F421FBFBFB6A12A51F5F3F4 /* Pods_LiveTV.framework */; };
 		669A930928C9972A00B82A2E /* LiveTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A930828C9972A00B82A2E /* LiveTVApp.swift */; };
 		669A930B28C9972A00B82A2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A930A28C9972A00B82A2E /* ContentView.swift */; };
 		669A930D28C9972B00B82A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669A930C28C9972B00B82A2E /* Assets.xcassets */; };
 		669A931028C9972B00B82A2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669A930F28C9972B00B82A2E /* Preview Assets.xcassets */; };
+		669A931728C9C38500B82A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669A931628C9C38500B82A2E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DBCF275A060E6427ADCFED9 /* Pods-LiveTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.debug.xcconfig"; path = "Target Support Files/Pods-LiveTV/Pods-LiveTV.debug.xcconfig"; sourceTree = "<group>"; };
+		2F421FBFBFB6A12A51F5F3F4 /* Pods_LiveTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		669A930528C9972A00B82A2E /* LiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669A930828C9972A00B82A2E /* LiveTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTVApp.swift; sourceTree = "<group>"; };
 		669A930A28C9972A00B82A2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		669A930C28C9972B00B82A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669A930F28C9972B00B82A2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		669A931628C9C38500B82A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67ED864BC12C52202AE9EC37 /* Pods-LiveTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveTV.release.xcconfig"; path = "Target Support Files/Pods-LiveTV/Pods-LiveTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A88D4075E238830C1322FF /* Pods_LiveTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5066B31EBE2D6933BDA58884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DBCF275A060E6427ADCFED9 /* Pods-LiveTV.debug.xcconfig */,
+				67ED864BC12C52202AE9EC37 /* Pods-LiveTV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		669A92FC28C9972900B82A2E = {
 			isa = PBXGroup;
 			children = (
 				669A930728C9972A00B82A2E /* LiveTV */,
 				669A930628C9972A00B82A2E /* Products */,
+				5066B31EBE2D6933BDA58884 /* Pods */,
+				9447C0D0175481A44148CAD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				669A930828C9972A00B82A2E /* LiveTVApp.swift */,
+				669A931628C9C38500B82A2E /* AppDelegate.swift */,
 				669A930A28C9972A00B82A2E /* ContentView.swift */,
 				669A930C28C9972B00B82A2E /* Assets.xcassets */,
 				669A930E28C9972B00B82A2E /* Preview Content */,
@@ -67,6 +86,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9447C0D0175481A44148CAD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F421FBFBFB6A12A51F5F3F4 /* Pods_LiveTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 669A931328C9972B00B82A2E /* Build configuration list for PBXNativeTarget "LiveTV" */;
 			buildPhases = (
+				60EBFB188B5CD3C19A91F01B /* [CP] Check Pods Manifest.lock */,
 				669A930128C9972A00B82A2E /* Sources */,
 				669A930228C9972A00B82A2E /* Frameworks */,
 				669A930328C9972A00B82A2E /* Resources */,
@@ -132,11 +160,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60EBFB188B5CD3C19A91F01B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		669A930128C9972A00B82A2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669A931728C9C38500B82A2E /* AppDelegate.swift in Sources */,
 				669A930B28C9972A00B82A2E /* ContentView.swift in Sources */,
 				669A930928C9972A00B82A2E /* LiveTVApp.swift in Sources */,
 			);
@@ -261,13 +315,16 @@
 		};
 		669A931428C9972B00B82A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DBCF275A060E6427ADCFED9 /* Pods-LiveTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"LiveTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 678YC8HMA3;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -291,6 +348,7 @@
 		};
 		669A931528C9972B00B82A2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67ED864BC12C52202AE9EC37 /* Pods-LiveTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +356,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LiveTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 678YC8HMA3;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
